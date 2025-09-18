@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    int english, mathematics, science, computer, history;
+    int total_marks;
+    float persentage, average_marks;
+    scanf("%d", &english);
+    scanf("%d", &mathematics);
+    scanf("%d", &science);
+    scanf("%d", &computer);
+    scanf("%d", &history);
+    total_marks = english + mathematics + science + computer + history;
+    average_marks = (english + mathematics + science + computer + history)/5;
+    persentage = (english + mathematics + science + computer + history)/5;
+    printf("%d ", total_marks );
+    printf("%.2f ", average_marks );
+    printf("%.2f ", persentage );
+    return 0;
+}
