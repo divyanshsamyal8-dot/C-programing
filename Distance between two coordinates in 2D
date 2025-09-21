@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int x, y, m, n, distance;
+    printf("Enter quardinate x and y :");
+    scanf("%d%d", &x,&y);
+    printf("Enter quardinate m and n :");
+    scanf("%d%d", &m,&n);
+    distance = sqrt(pow((x - m), 2) + pow((y - n), 2));
+    printf("Distance between two points = %d", distance);
+    return 0;
+}
