@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+    int P,  T;
+    float A, R, interest;
+    scanf("%d%f%d", &P, &R, &T);
+    A = P * pow(1+(R/100.0), T);
+    interest = A - P;
+    printf("%.2f", interest);
+    return 0;
+    
+}
