@@ -1,26 +1,14 @@
 #include<stdio.h>
 int main(){
-    float sideofsquare, lengthofrectangle, wridthofrectangle, radiusofcircle;
-    float area_of_square, area_of_rectangle, area_of_circle, perimerte_square, perimeter_rectangle, perimeter_circle;
-    printf("Enter Side of Square : ");
-    scanf("%f", &sideofsquare);
-     area_of_square = sideofsquare * sideofsquare;
-     perimerte_square = 4 * sideofsquare;
-     printf("Enter length of rectange : ");
-     scanf("%f", &lengthofrectangle);
-     printf("Enter wridth of rectangle : ");
-     scanf("%f", &wridthofrectangle);
-     area_of_rectangle = lengthofrectangle * wridthofrectangle;
-      perimeter_rectangle = 2 * lengthofrectangle + 2 * wridthofrectangle;
-     printf("Enter radius of circle : ");
-     scanf("%f", &radiusofcircle);
-     area_of_circle = 3.14 * radiusofcircle * radiusofcircle;
-     perimeter_circle = 2 * 3.14 * radiusofcircle;
-     printf("Area of square = %f \n", area_of_square);
-     printf("Perimerter of square = %f \n", perimerte_square);
-     printf("Area of rectangle = %f \n", area_of_rectangle);
-     printf("Perimter of rectangle = %f \n", perimeter_rectangle);
-     printf("Area of circle = %f \n", area_of_circle);
-     printf("Perimeter of rectangle = %f \n", perimeter_circle);
+    int R, A, L, W;
+    float AC, PC, AS, PS, AR, PR;
+    scanf("%d%d%d%d", &R, &A, &L, &W);
+    AC = 3.1416 * R * R;
+    PC = 3.1416 * 2 * R;
+    AS = A * A;
+    PS = 4 * A;
+    AR = L * W;
+    PR = 2*(L+W);
+    printf("Circle: %.2f %.2f\nSquare: %.2f %.2f\nRectangle: %.2f %.2f", AC, PC, AS, PS, AR, PR);
     return 0;
 }
