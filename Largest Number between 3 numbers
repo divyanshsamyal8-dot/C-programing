@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main(){
+    int A, B, C;
+    scanf("%d%d%d", &A, &B, &C);
+    A>B?((A>C)?printf("%d", A):printf("%d",C)):(B>C)?printf("%d", B):printf("%d", C);
+    return 0;
+    }
