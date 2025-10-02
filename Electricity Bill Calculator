@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int U;
+    float Tax;
+    scanf("%d", &U);
+    if 
+        (50>=U) {
+        Tax = U*0.50*20.0/100.0;
+        printf("%.2f", U * 0.50 + Tax);
+    }
+    else if
+        (150>=U) {
+        Tax = U*0.70*20.0/100.0; 
+        printf("%.2f", U * 0.75 + Tax);
+    }
+    else if
+        (250>=U) {
+        Tax = U*1.20*20.0/100.0;
+        printf("%.2f", U * 1.20 + Tax);  
+    }
+    else if
+        (U>250)  {
+        Tax = U*1.50*20.0/100.0;
+        printf("%.2f", U * 1.50 + Tax);
+        
+    }
+        
+    return 0;
+}
