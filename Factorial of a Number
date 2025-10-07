@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    int N, i, mul=1;
+    scanf("%d", &N);
+    for(i=1; i<=N; i++){
+        mul *= i;
+
+    }    
+    printf("%d", mul);
+    return 0;
+}
