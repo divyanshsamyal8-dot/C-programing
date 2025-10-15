@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(){
+    int N, Num, Max;
+    scanf("%d", &N);
+    scanf("%d", &Num);
+        Max = Num;
+    for(int i=1;i<N;i++){  //N=5
+           scanf("%d", &Num);
+        if(Num > Max){
+            Max = Num;
+   
+        }
+    }
+    printf("%d", Max);
+            
+        
+    
+    
+    return 0;
+   }
