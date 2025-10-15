@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int N, count=0, sum=0, temp;
+    scanf("%d", &N);
+    temp = N;
+    while(temp>0){
+       
+        count++;
+        temp = temp / 10;
+    }
+temp = N;
+    while(temp>0){
+        int digit = temp%10;
+         sum += pow(digit, count);
+        temp = temp/10;
+    }
+    if(sum == N){
+    printf("Armstrong");
+}
+    else 
+    printf("Not Armstrong");
+
+    return 0;
+}
