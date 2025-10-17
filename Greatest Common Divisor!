@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int A, B, GSD;
+    scanf("%d%d", &A, &B);
+    int Small = (A>B)? A : B;
+    for(int i=1; i<=Small; i++){
+            if(A%i==0 && B%i==0){
+              GSD = i;
+            }
+    }
+    printf("%d", GSD);
+    return 0;
+}
