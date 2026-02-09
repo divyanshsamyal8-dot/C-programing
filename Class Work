@@ -1,5 +1,42 @@
 //Imlementation of Lists Using Arrays
 #include<stdio.h>
+#define MAX 100
+int list[MAX];
+int n = 0; //no of element present in the list
+
+void insertAtBeg(int value){
+//Check if list is full
+    if(n == MAX){
+        printf("List is Full !!!\n");
+        return 0;
+    }
+    for(int i=n-1; i>=0; i--){
+        list[i+1] = list[i];
+    }
+    list[0] = value;
+    n++;
+    printf("Element inserted !!!\n");
+}
+void insertAtEnd(int value){
+   if(n == MAX){
+        printf("List is Full !!!\n");
+        return;
+   }
+    
+    list[n] == value;
+    n++;
+    printf("Element Insterted !!!\n");
+}
+void displayList(){
+    if(n == 0){
+        printf("List is Empty !!!\n");
+        return;
+    }
+    for(int i=0; i<n; i++){
+        printf("%d\t", list[i]);
+    }
+    printf("\n");
+}
 int main(){
     while(1){
         printf("1. Insert In Beginnig\n");
@@ -13,13 +50,19 @@ int main(){
         printf("9. Update Element IN List\n");
         printf("10. Sort ELemet Of List\n");
         printf("11. Exit\n");
-        int choice;
+        int choice, data;
         printf("Enter Choice: ");
         scanf("%d", &choice);
         switch(choice){
             case 1:
+                printf("Enter Data: ");
+                scanf("%d", &data);
+                insertAtBeg(data);
                 break;
             case 2:
+                printf("Enter Data: ");
+                scanf("%d", &data);
+                insertAtBeg(data);
                 break;
             case 3:
                 break;
@@ -30,6 +73,7 @@ int main(){
             case 6:
                 break;
             case 7:
+                displayList();
                 break;
             case 8:
                 break;
